@@ -1,0 +1,63 @@
+{
+  "name": "vuepress-web-app",
+  "author": "nicejade",
+  "version": "0.1.3",
+  "description": "Web applications built with Vuepress",
+  "scripts": {
+    "install:yarn": "yarn install",
+    "install@needproxy": "npm install",
+    "remove": "rimraf node_modules",
+    "preview": "cd ./dist && serve -s -p 8088",
+    "dev:vuepress": "gulp copyVuepressStatic && vuepress dev",
+    "build:vuepress": "gulp copyVuepressStatic && vuepress build && gulp cdnPre",
+    "deploy:vuepress": "bash deploy.vuepress.sh",
+    "prettier": "prettier --write '**/*.md'",
+    "prettier-watch": "onchange '**/*.md' -- prettier --write {{changed}}",
+
+    "dev:nodeppt": "gulp copyNodePPTStatic && cd .nodeppt && nodeppt start -w",
+    "build:nodeppt": "gulp copyNodePPTStatic && gulp build",
+    "deploy:nodeppt": "bash deploy-nodeppt.sh",
+    "deploy:nodeppt-gulp": "gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicejade/vuepress-web-app"
+  },
+  "dependencies": {
+    "autosize": "^4.0.2",
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "date-fns": "^1.29.0",
+    "element-ui": "^2.4.0",
+    "github-markdown-css": "^2.10.0",
+    "gulp-replace": "^1.0.0",
+    "md5": "^2.2.1",
+    "node-polyglot": "^2.3.0",
+    "raw-loader": "^0.5.1"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gift": "^0.10.2",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-shell": "^0.6.5",
+    "onchange": "^5.0.2",
+    "prettier": "^1.14.3"
+  },
+  "lint-staged": {
+    "**/**.{js,json,pcss,md,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "printWidth": 120,
+    "proseWrap": "never"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  }
+}

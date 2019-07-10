@@ -1,0 +1,28 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+_tmp
+__tmp
+__cant-run-now
+node_modules
+dist
+
+.DS_Store
+
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+
+# Custom 自定义
+.vuepress/public/static/*
+.nodeppt/static/*

@@ -1,0 +1,54 @@
+/* 链接样式 */
+a {
+    color: yellow;
+    padding: 0 3px;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:hover {
+    color: yellow;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+ul li ul li:before{
+    content: "";
+}
+ul li ul{
+    list-style-type:circle;
+}
+ul li ul li{
+    margin-bottom: 0px;
+    font-size:22px;
+}
+ul ul{
+    margin-top: 0px;
+}
+h1,h2,h3{
+    text-shadow:2px 2px 2px #000 !important;
+}
+strong{
+    color: rgb(0, 103, 187) !important;
+}
+li ol{
+    margin: 0 0 0 2em;
+    font-size: 22px;
+}
+body{
+    font-family: Times,"YaHei Consolas Hybrid",STHeiti,"Microsoft Yahei",Arial,Helvetica,sans-serif;
+}
+code{
+    font-size:24px;
+}
+table td{
+    padding: 8px;
+}
+table th{
+    padding: 8px;
+}
+table tr>td:first-child, table th{
+    font-weight: normal;
+}
+
+

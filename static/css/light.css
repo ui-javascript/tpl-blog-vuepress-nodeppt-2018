@@ -1,0 +1,58 @@
+ul li ul li:before{
+    content: "";
+}
+ul li ul{
+    list-style-type:circle;
+}
+ul li ul li{
+    margin-bottom: 0px;
+    font-size:22px;
+}
+ul ul{
+    margin-top: 0px;
+}
+h1,h2,h3{
+    text-shadow:0px 0px 1px #000 !important;
+}
+strong{
+    color: rgb(0, 103, 187) !important;
+}
+li ol{
+    margin: 0 0 0 2em;
+    font-size: 22px;
+}
+body{
+    font-family: Times,"YaHei Consolas Hybrid",STHeiti,"Microsoft Yahei",Arial,Helvetica,sans-serif;
+}
+code{
+    font-size:24px;
+}
+.magic>.magicItem{
+    color:black;
+}
+table td{
+    padding: 8px;
+}
+table th{
+    padding: 8px;
+}
+table tr>td:first-child, table th{
+    font-weight: normal;
+}
+slides>slide .slide-wrapper em{
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.8);
+}
+slides>slide .slide-wrapper blockquote::before{
+    content: "" !important;
+}
+slides>slide .slide-wrapper blockquote{
+    border-left:5px solid #3E87CF !important;
+    display: block;
+    background-color: #e9fff8 !important;
+}
+a{
+    vertical-align: top;
+}
+slides>slide .slide-wrapper b, slides>slide .slide-wrapper strong{
+    margin: 0;
+}
